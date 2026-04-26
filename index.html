@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nifail Zazhemi — Web Developer & UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+</head>
+<body class="light-mode">
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div id="loading-screen">
+    <div class="loader-inner">
+      <div class="loader-logo">NZ</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <span class="loader-text">Memuat portofolio...</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-box">NZ</span>
+        <span class="logo-name">Nifail Zazhemi</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="nav-right">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+          <i class="ph ph-moon" id="toggleIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="ph ph-x"></i></button>
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-decor">
+      <div class="bg-circle c1"></div>
+      <div class="bg-circle c2"></div>
+      <div class="bg-grid"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Text Side -->
+      <div class="hero-text reveal-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+        <h1 class="hero-name">Nifail<br /><span class="name-accent">Zazhemi</span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">Saya seorang </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Membangun pengalaman digital yang intuitif 
+          dan menarik melalui desain UI/UX yang berfokus pada 
+          pengguna, serta pengembangan frontend yang responsif, 
+          modern, dan fungsional.
+
+        </p>
+        <div class="hero-btns">
+          <a href="cv/CV_front-end Dev & UIUX Design.pdf" class="btn-primary" target="_blank">
+            <i class="ph ph-download-simple"></i> Download CV
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="ph ph-paper-plane-tilt"></i> Hubungi Saya
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-socials">
+          <a href="https://github.com/nflzhm" class="social-icon" aria-label="GitHub" target="_blank"><i class="ph ph-github-logo"></i></a>
+          <a href="https://www.linkedin.com/in/nifail-zazhemi-a9921030b" class="social-icon" aria-label="LinkedIn" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="https://www.instagram.com/nflzhm" class="social-icon" aria-label="Instagram" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+          <a href="mailto:nzazhemi@email.com" class="social-icon" aria-label="Email"><i class="ph ph-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Photo Side -->
+      <div class="hero-photo reveal-right">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <!-- Placeholder photo using initials -->
+            <div class="photo-placeholder">
+              <span>NZ</span>
+            </div>
+          </div>
+          <div class="photo-ring r1"></div>
+          <div class="photo-ring r2"></div>
+          <!-- Floating Badges -->
+          <div class="float-badge fb1">
+            <i class="ph ph-code"></i>
+            <span>Web Developer</span>
+          </div>
+          <div class="float-badge fb2">
+            <i class="ph ph-palette"></i>
+            <span>UI/UX Designer</span>
+          </div>
+          <div class="float-badge fb3">
+            <i class="ph ph-star"></i>
+            <span>Freelancer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <div class="about-grid">
+        <!-- Left: Image + decoration -->
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">NZ</div>
+            <div class="about-decor-box"></div>
+            <div class="about-experience-tag">
+              <strong>2+</strong>
+              <span>Tahun<br>Pengalaman</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about-content reveal-right">
+          <h2 class="section-title">Tentang <span class="accent">Saya</span></h2>
+          <p class="about-text">
+            Halo! Saya <strong>Nifail Zazhemi</strong>, seorang mahasiswa Teknik Informatika 
+            yang bersemangat membangun produk digital berkualitas tinggi. Saya menggabungkan 
+            kreativitas desain dengan kemampuan teknis untuk menciptakan pengalaman pengguna 
+            yang menarik, fungsional, dan mudah digunakan.
+          </p>
+          <p class="about-text">
+            Saat ini saya fokus pada pengembangan Front end development menggunakan PHP/Laravel 
+            dan JavaScript, serta desain UI/UX. Tujuan saya adalah berkontribusi pada proyek-proyek inovatif yang memberikan 
+            dampak nyata bagi masyarakat.
+          </p>
+
+          <!-- Education -->
+          <div class="edu-card">
+            <i class="ph ph-graduation-cap edu-icon"></i>
+            <div>
+              <strong>S1 Teknik Informatika</strong>
+              <span>Universitas Amikom Purwokerto · 2022 - 2026</span>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <strong class="counter" data-target="6">0</strong><span>+</span>
+              <p>Proyek<br>Selesai</p>
+            </div>
+            <div class="stat-item">
+              <strong class="counter" data-target="2">0</strong><span>+</span>
+              <p>Tahun<br>Pengalaman</p>
+            </div>
+            <div class="stat-item">
+              <strong class="counter" data-target="96">0</strong><span>%</span>
+              <p>Kepuasan<br>Klien</p>
+            </div>
+            <div class="stat-item">
+              <strong class="counter" data-target="5">0</strong><span>+</span>
+              <p>Teknologi<br>Dikuasai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title centered reveal">Keahlian <span class="accent">Teknis</span></h2>
+      <p class="section-sub reveal">Teknologi dan tools yang saya kuasai dalam pengembangan proyek.</p>
+
+      <div class="skills-grid">
+        <!-- Skill Cards -->
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #E44D26"><i class="ph ph-code"></i></div>
+            <div>
+              <span class="skill-name">HTML5</span>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+          <p class="skill-desc">Semantic markup, accessibility, SEO-friendly structure</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="1">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #1572B6"><i class="ph ph-paint-brush"></i></div>
+            <div>
+              <span class="skill-name">CSS3</span>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+          <p class="skill-desc">Flexbox, Grid, animations, responsive design</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="2">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #F7DF1E"><i class="ph ph-lightning"></i></div>
+            <div>
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">65%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          <p class="skill-desc">ES6+, DOM manipulation, async/await, APIs</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="3">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #FF2D20"><i class="ph ph-flame"></i></div>
+            <div>
+              <span class="skill-name">Laravel</span>
+              <span class="skill-pct">65%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          <p class="skill-desc">MVC architecture, Eloquent ORM, REST API</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="4">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #8993BE"><i class="ph ph-terminal"></i></div>
+            <div>
+              <span class="skill-name">PHP</span>
+              <span class="skill-pct">70%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+          <p class="skill-desc">OOP, procedural, server-side scripting</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="5">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #A259FF"><i class="ph ph-figma-logo"></i></div>
+            <div>
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-pct">82%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="82"></div></div>
+          <p class="skill-desc">Figma, wireframing, prototyping, user research</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="6">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #00758F"><i class="ph ph-database"></i></div>
+            <div>
+              <span class="skill-name">MySQL</span>
+              <span class="skill-pct">70%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="77"></div></div>
+          <p class="skill-desc">Query optimization, normalization, stored procedures</p>
+        </div>
+
+        <div class="skill-card reveal" data-delay="7">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #f0f0f0"><i class="ph ph-git-branch"></i></div>
+            <div>
+              <span class="skill-name">GitHub</span>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+          <p class="skill-desc">Version control, branching, collaboration, CI/CD</p>
+        </div>
+
+        <!-- Skill: Photoshop -->
+        <div class="skill-card reveal" data-delay="8">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #31A8FF"><i class="ph ph-image"></i></div>
+            <div>
+              <span class="skill-name">Adobe Photoshop</span>
+              <span class="skill-pct">80%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          <p class="skill-desc">Photo editing, retouching, digital painting, graphic design</p>
+        </div>
+
+        <!-- Skill: Adobe Illustrator -->
+        <div class="skill-card reveal" data-delay="9">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #FF9A00"><i class="ph ph-pencil-circle"></i></div>
+            <div>
+              <span class="skill-name">Adobe Illustrator</span>
+              <span class="skill-pct">78%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+          <p class="skill-desc">Vector graphics, logo design, illustration, typography</p>
+        </div>
+
+        <!-- Skill: Canva -->
+        <div class="skill-card reveal" data-delay="10">
+          <div class="skill-header">
+            <div class="skill-icon" style="--ic: #00C4CC"><i class="ph ph-crop"></i></div>
+            <div>
+              <span class="skill-name">Canva</span>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+          <p class="skill-desc">Social media graphics, presentations, posters, branding</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title centered reveal">Proyek <span class="accent">Unggulan</span></h2>
+      <p class="section-sub reveal">Koleksi proyek terbaik yang mencerminkan kemampuan dan kreativitas saya.</p>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="app">App</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e)">
+            <div class="project-img-inner">
+              <i class="ph ph-shopping-cart"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="ph ph-eye"></i> Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Figma</span>
+            </div>
+            <h3>E-Commerce Ghosy Donat</h3>
+            <p>Platform e-commerce untuk penjualan donat di Bumiayu, menghadirkan kemudahan pemesanan online dengan desain modern, navigasi intuitif, dan sistem transaksi yang praktis.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img" style="background: linear-gradient(135deg, #0f3460, #533483)">
+            <div class="project-img-inner">
+              <i class="ph ph-hospital"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="ph ph-eye"></i> Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Figma</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Claude AI</span>
+            </div>
+            <h3>Company Profile</h3>
+            <p>Dalam proses pengembangan platform company profile digital RSU Allam Medica Bumiayu yang menampilkan layanan kesehatan, jadwal dokter, fasilitas, dan pendaftaran online.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-category="design">
+          <div class="project-img" style="background: linear-gradient(135deg, #c9a84c, #7b5e1e)">
+            <div class="project-img-inner">
+              <i class="ph ph-buildings"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="ph ph-eye"></i> Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Figma</span>
+            </div>
+            <h3>E-Commerce Thuglife.std</h3>
+            <p>website e-commerce Thuglife.std untuk penjualan baju brand dengan tampilan modern, katalog produk interaktif, dan sistem pemesanan online.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-category="app">
+          <div class="project-img" style="background: linear-gradient(135deg, #134e5e, #71b280)">
+            <div class="project-img-inner">
+              <i class="ph ph-calendar-check"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="ph ph-eye"></i> Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Figma</span>
+            </div>
+            <h3>Booking lapangan Futsal</h3>
+            <p>Aplikasi desktop admin untuk booking lapangan dengan fitur pengelolaan jadwal, data pelanggan, transaksi, dan reservasi.</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img" style="background: linear-gradient(135deg, #1c1c2e, #3a3a5c)">
+            <div class="project-img-inner">
+              <i class="ph ph-chart-bar"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="ph ph-eye"></i> Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3>Ticketing Wisata Kaligua</h3>
+            <p>sistem ticketing wisata Kaligua untuk pemesanan tiket online, pengelolaan data pengunjung, dan transaksi yang lebih praktis serta efisien.</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal" data-category="design">
+          <div class="project-img" style="background: linear-gradient(135deg, #2c3e50, #4a6741)">
+            <div class="project-img-inner">
+              <i class="ph ph-user-circle"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="ph ph-eye"></i> Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Claude AI</span>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>Website portofolio personal dengan desain modern, animasi scroll, dan dark mode toggle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+  ============================================================ -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-label reveal">Experience</div>
+      <h2 class="section-title centered reveal">Perjalanan <span class="accent">Karir</span></h2>
+      <p class="section-sub reveal">Setiap langkah membentuk kompetensi dan karakter saya.</p>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="ph ph-briefcase"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Design Graphic Intern</h3>
+                <span class="company">Polaeh.merch</span>
+              </div>
+              <span class="timeline-date">Sep 2025 - Feb 2026</span>
+            </div>
+            <p>Mendesain konten visual yang menarik dan mengelola strategi media sosial untuk meningkatkan engagement dan brand awareness.</p>
+            <div class="timeline-tags">
+              <span>Photoshop</span><span>Adobe Illustrator</span><span>Content Strategy</span><span>Social Media</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="ph ph-rocket-launch"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>UIUX Design & Frontend Development</h3>
+                <span class="company">PT Kinema Systrans Multimedia</span>
+              </div>
+              <span class="timeline-date">Sep 2024 - Des 2024</span>
+            </div>
+            <p>Menggabungkan desain visual yang user-friendly dengan pengembangan frontend yang responsif. Menciptakan pengalaman digital yang mulus dan intuitif melalui desain antarmuka di Figma hingga implementasi kode.</p>
+            <div class="timeline-tags">
+              <span>Figma</span><span>React</span><span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="ph ph-users-three"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Video Editor Youtube</h3>
+                <span class="company">Akun Pribadi</span>
+              </div>
+              <span class="timeline-date">Jul 2024 - Sekarang</span>
+            </div>
+            <p>Mengedit video untuk kanal YouTube pribadi, fokus pada konten musik</p>
+            <div class="timeline-tags">
+              <span>MSI APP Player</span><span>Avve Player</span><span>PixellabEpic</span><span>Youtube</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="ph ph-code"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Personal Projects & Self-Learning</h3>
+                <span class="company">Open Source & GitHub</span>
+              </div>
+              <span class="timeline-date">2022 - Sekarang</span>
+            </div>
+            <p>Aktif mengembangkan proyek personal dan berkontribusi pada komunitas open source. Rutin belajar teknologi baru melalui dokumentasi, kursus online, dan eksperimen mandiri.</p>
+            <div class="timeline-tags">
+              <span>Open Source</span><span>Self-Taught</span><span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-title centered reveal">Mari <span class="accent">Terhubung</span></h2>
+      <p class="section-sub reveal">Punya proyek menarik atau ingin berkolaborasi? Saya selalu terbuka untuk peluang baru.</p>
+
+      <div class="contact-grid">
+        <!-- Left: Info + Social -->
+        <div class="contact-info reveal-left">
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="ph ph-whatsapp-logo"></i>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+62 823-2336-0247</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="ph ph-envelope-simple"></i>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>nzazhemi@email.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="ph ph-linkedin-logo"></i>
+              </div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>Nifail Zazhemi</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="ph ph-github-logo"></i>
+              </div>
+              <div>
+                <strong>GitHub</strong>
+                <span>nflzhm</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Pills -->
+          <div class="social-pills">
+            <a href="https://wa.me/6282323360247" class="social-pill wa" target="_blank"><i class="ph ph-whatsapp-logo"></i><span>WhatsApp</span></a>
+            <a href="https://www.linkedin.com/in/nifail-zazhemi-a9921030b" class="social-pill li" target="_blank"><i class="ph ph-linkedin-logo"></i><span>LinkedIn</span></a>
+            <a href="https://github.com/nflzhm" class="social-pill gh" target="_blank"><i class="ph ph-github-logo"></i><span>GitHub</span></a>
+            <a href="https://www.instagram.com/nflzhm" class="social-pill ig" target="_blank"><i class="ph ph-instagram-logo"></i><span>Instagram</span></a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xgorqbob" method="POST">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Nama Lengkap" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="sapabae@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Pesan singkat" />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Mau tanya apa bebas dah" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full">
+              <i class="ph ph-paper-plane-tilt"></i> Kirim Pesan
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="ph ph-check-circle"></i>Pesanmu sudah terkirim! Aku akan balas kalo ngga mager
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-box">NZ</span>
+        <span>Nifail Zazhemi</span>
+      </div>
+      <p class="footer-quote">
+        "Invest today, reap tomorrow. The market rewards those who dare to start."
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/nflzhm" aria-label="GitHub" target="_blank"><i class="ph ph-github-logo"></i></a>
+        <a href="https://www.linkedin.com/in/nifail-zazhemi-a9921030b" aria-label="LinkedIn" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://www.instagram.com/nflzhm" aria-label="Instagram" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+        <a href="mailto:nzazhemi@email.com" aria-label="Email"><i class="ph ph-envelope"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Nifail Zazhemi . All rights reserved.</span>
+        <span>Dibuat dengan cinta dan ngopi</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
